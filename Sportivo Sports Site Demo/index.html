@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Πανελλήνιος Αθλητικός Όμιλος </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="theme-color" content="darkblue">
+</head>
+
+<body>
+
+
+
+    <ul class="navigation">
+        <li><a href="#">Αρχική</a></li>
+        <li><a href="#">Πληροφορίες</a></li>
+        <li><a href="#">Επικοινωνία</a></li>
+        <li><a href="#">Τελευταία Νέα</a></li>
+        <li><a href="#">Ποδόσφαιρο</a> </li>
+        <li><a href="#">Μπάσκετ </a></li>
+    </ul>
+
+
+
+    <div class="wrapper">
+        <header>
+            <h2 class="h2"> Sportivo
+                <sub class="sub">Το&nbsp;νούμερο&nbsp;1&nbsp;site&nbsp;αθλητικής&nbsp;ενημέρωσης!</sub>
+            </h2>
+            <div class="align">
+
+                <article class="info">
+                    <span>Σ</span>ύμφωνα με τις πληροφορίες που μας παρέχει η ιστοσελίδα ΣΕΓΑΣ σας παρουσιάζουμε τους 8
+                    που ξεχώρισαν την φετινή σεζόν στον χώρο του στοίβου και συγκεκριμένα στα 100Μ όπου ο ανταγωνισμός
+                    αυτή τη χρονιά ήταν πολύ <b>hot </b> όπως θα δείτε και στο σχετικό πίνακα παρακάτω:
+
+                </article>
+            </div>
+            <h1 class=" h1 "><b>8 Καλύτεροι Αθλητές Στοίβου 100Μ Ελλάδος 2021</b></h1>
+        </header>
+
+
+        <main>
+            <div class="EditTable">
+
+                Αγώνισμα :<input type="string" name="race" id="race">
+                Personal Best :<input type="number" name="perbest" id="perbest">
+                Αθλητής :<input type="text" name="fname" id="fname">
+                Ranking :<input type="number" name="ranking" id="ranking">
+                Σύλλογος :<input type="text" name="club" id="club">
+
+                <button onclick="addHtmlTableRow();"> Προσθήκη</button>
+                <button onclick="editHtmlTbleSelectedRow();">Επεξεργασία</button>
+                <button onclick="removeSelectedRow();">Διαγραφή</button>
+            </div>
+
+
+
+            <table id="uomTrack">
+
+                <tr class="table-header">
+                    <th class="header">Χώρα</th>
+                    <th class="header">Αγώνισμα </th>
+                    <th class="header">Personal Best</th>
+                    <th class="header">Αθλητής</th>
+                    <th class="header">Ranking</th>
+                    <th class="header">Σύλλογος</th>
+                </tr>
+
+
+                <tr class="row">
+                    <td class="cell"><img src="Greek Flag/gr.svg" width="30 "> </td>
+                    <td class="cell">100Μ</td>
+                    <td class="cell">10.50</td>
+                    <td class="cell">ΝΥΦΑΝΤΟΠΟΥΛΟΣ</td>
+                    <td class="cell">1</td>
+                    <td class="cell">ΓΣ ΕΛΕΥΘ.ΒΕΝΙΖΕΛΟΣ</td>
+                </tr>
+
+                <tr class="row">
+                    <td class="cell"><img src="Greek Flag/gr.svg" width="30 "> </td>
+                    <td class="cell">100Μ</td>
+                    <td class="cell">10.52</td>
+                    <td class="cell"> ΤΡΙΒΥΖΑΣ ΠΑΝΑΓΙΩΤΗΣ</td>
+                    <td class="cell">2</td>
+                    <td class="cell">ΟΛΥΜΠΙΑΚΟΣ ΣΦΠ</td>
+                </tr>
+
+                <tr class="row">
+                    <td class="cell"><img src="Greek Flag/gr.svg" width="30 "> </td>
+                    <td class="cell">100Μ</td>
+                    <td class="cell">10.54</td>
+                    <td class="cell"> ΖΗΚΟΣ ΚΩΝΣΤΑΝΤΙΝΟΣ</td>
+                    <td class="cell">3</td>
+                    <td class="cell"> ΓΕΑ ΤΡΙΚΑΛΩΝ</td>
+                </tr>
+                <tr class="row">
+                    <td class="cell"><img src="Greek Flag/gr.svg" width="30 "> </td>
+                    <td class="cell">100Μ</td>
+                    <td class="cell">10.56</td>
+                    <td class="cell"> ΒΡΟΝΤΙΝΟΣ ΘΕΟΔΩΡΟΣ</td>
+                    <td class="cell">4</td>
+                    <td class="cell">Π.Α.Ο.Κ.</td>
+                </tr>
+                <tr class="row">
+                    <td class="cell"><img src="Greek Flag/gr.svg" width="30 "> </td>
+                    <td class="cell">100Μ</td>
+                    <td class="cell">10.60</td>
+                    <td class="cell">ΠΑΝΑΓΙΩΤΟΠΟΥΛΟΣ ΝΙΚΟΛΑΟΣ</td>
+                    <td class="cell">5</td>
+                    <td class="cell">ΓΣ ΑΘΛΟΣ ΚΕΡΑΤΣΙΝΙ-ΔΡΑΠET</td>
+                </tr>
+                <tr class="row">
+                    <td class="cell"><img src="Greek Flag/gr.svg" width="30 "> </td>
+                    <td class="cell">100Μ</td>
+                    <td class="cell">10.62</td>
+                    <td class="cell">ΒΟΣΚΟΠΟΥΛΟΣ ΙΩΑΝΝΗΣ</td>
+                    <td class="cell">6</td>
+                    <td class="cell">ΑΟ ΒΑΡΗΣ ΔΡΟΜΕΑΣ</td>
+                </tr>
+                <tr class="row">
+                    <td class="cell"><img src="Greek Flag/gr.svg" width="30 "> </td>
+                    <td class="cell">100Μ</td>
+                    <td class="cell">10.62</td>
+                    <td class="cell">ΧΡΥΣΑΦΗΣ ΔΗΜΗΤΡΙΟΣ</td>
+                    <td class="cell">7</td>
+                    <td class="cell">ΑΣΣ ΑΛΕΞΑΝΔΡΟΣ ΜΑΚΕΔΟΝΙΑΣ</td>
+                </tr>
+                <tr class="row">
+                    <td class="cell"><img src="Greek Flag/gr.svg" width="30 "> </td>
+                    <td class="cell">100Μ</td>
+                    <td class="cell">10.67</td>
+                    <td class="cell">ΜΥΡΙΑΝΘΟΠΟΥΛΟΣ ΒΑΣΙΛΕΙΟΣ</td>
+                    <td class="cell">8</td>
+                    <td class="cell"> ΠΑΝΙΩΝΙΟΣ ΓΣ</td>
+                </tr>
+
+
+
+            </table>
+
+
+
+        </main>
+
+        <span id="minV"></span>
+        <span id="maxV"></span>
+        <span id="sumV"></span>
+        <span id="avgV"></span>
+
+        <footer class="segas">
+
+
+            copyrights 2021 πληροφορίες από
+            <a href="http://www.segas.gr/index.php/statistics/indoor/2021-outdoor-best-athletes">www.segas.gr</a>
+        </footer>
+    </div>
+
+
+
+    <script src="uomTrack.js">
+
+    </script>
+    <script src="index.js"></script>
+</body>
+
+
+</html>

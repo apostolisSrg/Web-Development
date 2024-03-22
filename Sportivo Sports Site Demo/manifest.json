@@ -1,0 +1,16 @@
+{
+    "short_name": "Sportivo",
+    "name": "8 Καλύτεροι Αθλητές Στοίβου 100Μ Ελλάδος 2021",
+    "start_url": ".",
+    "background_color": "darkred",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "darkblue",
+    "icons": [
+        {
+            "src": "/Greek Flag/gr.svg",
+            "type": "image/svg+xml",
+            "sizes": "260x192"
+        }
+    ]
+}
